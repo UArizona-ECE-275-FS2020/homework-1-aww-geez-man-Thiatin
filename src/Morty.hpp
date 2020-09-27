@@ -33,9 +33,20 @@ namespace interdimensional {
 // =========================================================================== // 
 //          Declare Namespace C137 and enclosed functions here 
 // =========================================================================== // 
-
-
-
+namespace c137{
+	int start;
+	int stop;
+	int step;
+	void Morty(int start, int stop, int step);
+	void Morty(int start, int stop);
+}
 // =========================================================================== // 
 //          Declare Namespace Z286 and enclosed functions here 
 // =========================================================================== // 
+namespace z286{
+	int start;
+	int stop;
+	int step;
+	void Morty(int start, int stop, int step);
+	void Morty(int start, int stop);
+}
