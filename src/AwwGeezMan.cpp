@@ -36,6 +36,38 @@ int main (int ac, char** av) {
 		
 		return -1;
 	}
+	else if (ac == 4) {
+	i1 = start;
+	truecheck = 0;
+	while(i1 <= stop) {
+		if (truecheck == i1%3) {
+			std::cout << "Aww";
+		}
+		if (truecheck == i1%5) {
+			std::cout << "Geez";
+		}
+		if (truecheck == i1%15) {
+			std::cout<<"Man";
+		}
+			std::cout<<std::endl;
+			i1++;
+	}
+	}
+	else if (ac == 5) {
+	while(i1 <= stop) {
+		if (truecheck == i1%3) {
+			std::cout << "Aww";
+		}
+		if (truecheck == i1%5) {
+			std::cout << "Geez";
+		}
+		if (truecheck == i1%15) {
+			std::cout<<"Man";
+		}
+			std::cout<<std::endl;
+			i1=i1 + step;
+	}
+	}
 	
 	// Parse the command line arguments
 	
