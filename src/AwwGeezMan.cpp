@@ -37,20 +37,12 @@ int main (int ac, char** av) {
 		return -1;
 	}
 	else if (ac == 4) {
-	i1 = start;
-	truecheck = 0;
-	while(i1 <= stop) {
-		if (truecheck == i1%3) {
-			std::cout << "Aww";
+		if (dimension == "c137" || dimension == "C137") {
+		namespace c137;
 		}
-		if (truecheck == i1%5) {
-			std::cout << "Geez";
+		else if (dimension == "z286" || dimension == "Z286") {
+		namespace z286;
 		}
-		if (truecheck == i1%15) {
-			std::cout<<"Man";
-		}
-			std::cout<<std::endl;
-			i1++;
 	}
 	}
 	else if (ac == 5) {
