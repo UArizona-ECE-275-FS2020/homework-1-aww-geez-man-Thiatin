@@ -1,3 +1,4 @@
+
 /*
  __  __            _
 |  \/  | ___  _ __| |_ _   _        ___ _ __  _ __
@@ -16,14 +17,32 @@
 // =========================================================================== // 
 namespace C137 {
 
+    void Morty(int start, int stop, int step) {
+        int check = 0;
+        while (start <= stop) {
+            printf("%d: ", start);
+            if (check == (start % 15)) {
+                printf("Aww Geez Man");
+            }
+            else if (check == (start % 5)) {
+                printf("Geez");
+            }
+            else if (check == (start % 3)) {
+                printf("Aww");
+            }
+            start = start + step;
+            printf("\n");
+        } //while bracket
+    } //function bracket
+
     void Morty(int start, int stop) {
 
-        check = 0;
+       int check = 0;
 
         while (start <= stop) {
 
-          printf("%d: ", start);
-            
+            printf("%d: ", start);
+
             if (check == (start % 15)) {
                 printf("Aww Geez Man");
             }
@@ -34,67 +53,51 @@ namespace C137 {
                 printf("Aww");
             }
             start++;
-                printf("\n");
+            printf("\n");
         } //while bracket
     } //function bracket
 
-    void Morty(int start, int stop, int step) {
-        check = 0;
-            while (start <= stop) {
-                printf("%d: ", start);
-            if (check == (start % 15)) {
-                printf("Aww Geez Man");
-            }
-            else if (check == (start % 5)) {
-                printf("Geez");
-            }
-            else if (check == (start % 3)) {
-                printf("Aww");
-            }
-                start = start + step;
-                    printf("\n");
-            } //while bracket
-    } //function bracket
 } //namespace bracket
 // =========================================================================== // 
 //          Define functions enclosed in Namespace Z286 here 
 // =========================================================================== // 
- namespace Z286 {
-    void Morty(int start, int stop) {
-        check = 0;
+namespace Z286 {
+    void Morty(int start, int stop, int step) {
+        int check = 0;
         while (start <= stop) {
             printf("%d: ", start);
-                if (check == (start % 15)) {
-                    printf("naM zeeG wwA");
-                }
-                else if (check == (start % 5)) {
-                    printf("zeeG");
-                }
-                else if (check == (start % 3)) {
-                    printf("wwA");
-                }
-            start++;
-                printf("\n");
-        }//while bracket
+
+            if (check == (start % 15)) {
+                printf("naM zeeG wwA");
+            }
+            else if (check == (start % 5)) {
+                printf("zeeG");
+            }
+            else if (check == (start % 3)) {
+                printf("wwA");
+            }
+            start = start + step;
+            printf("\n");
+        } //while bracket
     }//function bracket
 
-    void Morty(int start, int stop, int step) {
-        check = 0;
-            while (start <= stop) {
-                 printf("%d: ", start);
-             
-                if (check == (start % 15)) {
-                    printf("naM zeeG wwA");
-                }
-                else if (check == (start % 5)) {
-                    printf("zeeG");
-                }
-                else if (check == (start % 3)) {
-                    printf("wwA");
-                }
-                start = start + step;
-                    printf("\n");
-            } //while bracket
+
+    void Morty(int start, int stop) {
+       int check = 0;
+        while (start <= stop) {
+            printf("%d: ", start);
+            if (check == (start % 15)) {
+                printf("naM zeeG wwA");
+            }
+            else if (check == (start % 5)) {
+                printf("zeeG");
+            }
+            else if (check == (start % 3)) {
+                printf("wwA");
+            }
+            start++;
+            printf("\n");
+        }//while bracket
     }//function bracket
 
 
