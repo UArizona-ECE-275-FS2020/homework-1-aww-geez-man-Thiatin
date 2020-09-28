@@ -49,14 +49,12 @@ int main(int ac, char** av) {
 		strcpy(dimension, av[3]);
 
 		if (!strcmp(dimension, "C137")) {
-			using namespace Morty C137;
 			printf("Morty C137 says:\n");
-			Morty(start, stop);
+			C137::Morty(start, stop);
 		}
 		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
-			using namespace Morty Z286;
-			Morty(start, stop);
+			Z286::Morty(start, stop);
 		}
 		else {
 			std::cout << "ERROR: Unknown dimension!!" << std::endl;
@@ -70,13 +68,13 @@ int main(int ac, char** av) {
 
 		if (!strcmp(dimension, "C137")) {
 			printf("Morty C137 says:\n");
-			using namespace Morty C137;
-			Morty(start, stop, step);
+			
+			C137::Morty(start, stop, step);
 		}
 		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
-			using namespace Morty Z286;
-			Morty(start, stop, step);
+			
+			Z286::Morty(start, stop, step);
 		}
 		else {
 			std::cout << "ERROR: Unknown dimension!!" << std::endl;
