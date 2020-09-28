@@ -87,16 +87,17 @@ namespace c137 {
         check = 0;
             while (start <= stop) {
                  printf("%d: ", start);
+             
+                if (check == (start % 15)) {
+                    printf("naM ");
+                }
+                
+                if (check == (start % 5)) {
+                    printf("zeeG ");
+                }
+
                 if (check == (start % 3)) {
                     printf("wwA");
-                }
-
-                if (check == (start % 5)) {
-                    printf("zeeG");
-                }
-
-                if (check == (start % 15)) {
-                    printf("naM");
                 }
                 start = start + step;
                     printf("\n");
