@@ -59,8 +59,7 @@ int main(int ac, char** av) {
 			Morty(start, stop);
 		}
 		else {
-			std::cout << "Dimension not Recognized" << std::endl;
-			std::cout << "Dimensions are C137 or Z286" << std::endl;
+			std::cout << "ERROR: Unknown dimension!!" << std::endl;
 		}
 	}
 	else if (ac == 5) {
@@ -80,8 +79,7 @@ int main(int ac, char** av) {
 			Morty(start, stop, step);
 		}
 		else {
-			std::cout << "Dimension not Recognized" << std::endl;
-			std::cout << "Dimensions are C137 or Z286" << std::endl;
+			std::cout << "ERROR: Unknown dimension!!" << std::endl;
 		}
 	}
 
