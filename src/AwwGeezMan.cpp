@@ -48,12 +48,12 @@ int main(int ac, char** av) {
 		stop = atoi(*(av + 2));
 		strcpy(dimension, av[3]);
 
-		if (strcmp(dimension, "C137")) {
+		if (!strcmp(dimension, "C137")) {
 			using namespace c137;
 			printf("Morty C137 says:\n");
 			Morty(start, stop);
 		}
-		else if (strcmp(dimension, "Z286")) {
+		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
 			using namespace z286;
 			Morty(start, stop);
@@ -69,12 +69,12 @@ int main(int ac, char** av) {
 		step = atoi(*(av + 3));
 		strcpy(dimension, av[4]);
 
-		if (strcmp(dimension, "C137")) {
+		if (!strcmp(dimension, "C137")) {
 			printf("Morty C137 says:\n");
 			using namespace c137;
 			Morty(start, stop, step);
 		}
-		else if (strcmp(dimension, "Z286")) {
+		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
 			using namespace z286;
 			Morty(start, stop, step);
