@@ -49,13 +49,13 @@ int main(int ac, char** av) {
 		strcpy(dimension, av[3]);
 
 		if (!strcmp(dimension, "C137")) {
-			using namespace C137;
+			using namespace Morty C137;
 			printf("Morty C137 says:\n");
 			Morty(start, stop);
 		}
 		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
-			using namespace Z286;
+			using namespace Morty Z286;
 			Morty(start, stop);
 		}
 		else {
@@ -70,12 +70,12 @@ int main(int ac, char** av) {
 
 		if (!strcmp(dimension, "C137")) {
 			printf("Morty C137 says:\n");
-			using namespace C137;
+			using namespace Morty C137;
 			Morty(start, stop, step);
 		}
 		else if (!strcmp(dimension, "Z286")) {
 			printf("Morty Z286 says:\n");
-			using namespace Z286;
+			using namespace Morty Z286;
 			Morty(start, stop, step);
 		}
 		else {
