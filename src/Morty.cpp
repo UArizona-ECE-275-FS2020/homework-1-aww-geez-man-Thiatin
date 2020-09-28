@@ -42,6 +42,7 @@ namespace c137 {
     void Morty(int start, int stop, int step) {
         check = 0;
             while (start <= stop) {
+                printf("%d: ", start);
                 if (check == (start % 3)) {
                     printf("Aww");
                 }
@@ -65,6 +66,7 @@ namespace c137 {
     void Morty(int start, int stop) {
         check = 0;
         while (start <= stop) {
+            printf("%d: ", start);
             if (check == (start % 3)) {
                 printf("wwA");
             }
@@ -84,6 +86,7 @@ namespace c137 {
     void Morty(int start, int stop, int step) {
         check = 0;
             while (start <= stop) {
+                 printf("%d: ", start);
                 if (check == (start % 3)) {
                     printf("wwA");
                 }
