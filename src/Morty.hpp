@@ -37,6 +37,7 @@ namespace c137{
 	int start;
 	int stop;
 	int step;
+	int check;
 	void Morty(int start, int stop, int step);
 	void Morty(int start, int stop);
 }
@@ -47,6 +48,7 @@ namespace z286{
 	int start;
 	int stop;
 	int step;
+	int check;
 	void Morty(int start, int stop, int step);
 	void Morty(int start, int stop);
 }
