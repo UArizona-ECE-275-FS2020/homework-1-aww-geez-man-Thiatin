@@ -22,6 +22,7 @@ namespace c137 {
 
         while (start <= stop) {
 
+          printf("%d: ", start);
             if (check == (start % 3)) {
                 printf("Aww");
             }
