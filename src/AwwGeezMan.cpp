@@ -18,12 +18,20 @@ One of Morty C137's favorite phrases is "Aww Geez Man". But, in dimension Z286, 
 exists a Morty who says everything backwards.
 
 */
+#include <stdlib.h>
+#include <string.h>
+#include <iostream.h>
 
 // Include the Morty header file
 #include "Morty.hpp"
+#include "Morty.cpp"
 
 
 int main (int ac, char** av) {
+	char dimension[4];
+	int start = 0;
+	int stop = 0;
+	int step = 0;
 	// Parse the command line arguments. The program is executed as
 	// ./AwwGeezMan {start} {stop} {dimension}
 	// or 
@@ -37,28 +45,41 @@ int main (int ac, char** av) {
 		return -1;
 	}
 	else if (ac == 4) {
-		if (dimension == "c137" || dimension == "C137") {
-		namespace c137;
+		start = argv[1];
+		stop = argv[2];
+		strcpy(dimension, argv[3]);
+		
+		if (dimension == "C137") {
+		using namespace c137;
+			Morty(start, stop);
 		}
-		else if (dimension == "z286" || dimension == "Z286") {
-		namespace z286;
+		else if (dimension == "Z286") {
+		using namespace z286;
+			Morty(start, stop);
 		}
-	}
+		else {
+		std::cout<<"Dimension not Recognized"<<std::endl;
+		std::cout<<"Dimensions are C137 or Z286"<<std::endl;
+		}
 	}
 	else if (ac == 5) {
-	while(i1 <= stop) {
-		if (truecheck == i1%3) {
-			std::cout << "Aww";
+		start = argv[1];
+		stop = argv[2];
+		step = argv[3]
+		strcpy(dimension, argv[4]);
+		
+		if (dimension == "C137") {
+		using namespace c137;
+			Morty(start, stop, step);
 		}
-		if (truecheck == i1%5) {
-			std::cout << "Geez";
+		else if (dimension == "Z286") {
+		using namespace z286;
+			Morty(start, stop, step);
 		}
-		if (truecheck == i1%15) {
-			std::cout<<"Man";
+		else {
+		std::cout<<"Dimension not Recognized"<<std::endl;
+		std::cout<<"Dimensions are C137 or Z286"<<std::endl;
 		}
-			std::cout<<std::endl;
-			i1=i1 + step;
-	}
 	}
 	
 	// Parse the command line arguments
