@@ -34,7 +34,7 @@ namespace interdimensional {
 // =========================================================================== // 
 //          Declare Namespace C137 and enclosed functions here 
 // =========================================================================== // 
-namespace c137 {
+namespace C137 {
 	int start;
 	int stop;
 	int step;
@@ -45,7 +45,7 @@ namespace c137 {
 // =========================================================================== // 
 //          Declare Namespace Z286 and enclosed functions here 
 // =========================================================================== // 
-namespace z286 {
+namespace Z286 {
 	int start;
 	int stop;
 	int step;
