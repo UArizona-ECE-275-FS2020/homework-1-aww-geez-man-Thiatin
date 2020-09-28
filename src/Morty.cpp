@@ -14,7 +14,7 @@
 // =========================================================================== // 
 //          Define functions enclosed in Namespace C137 here 
 // =========================================================================== // 
-namespace Morty C137 {
+namespace C137 {
 
     void Morty(int start, int stop) {
 
@@ -59,7 +59,7 @@ namespace Morty C137 {
 // =========================================================================== // 
 //          Define functions enclosed in Namespace Z286 here 
 // =========================================================================== // 
- namespace Morty Z286 {
+ namespace Z286 {
     void Morty(int start, int stop) {
         check = 0;
         while (start <= stop) {
