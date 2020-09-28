@@ -24,15 +24,13 @@ namespace c137 {
 
           printf("%d: ", start);
             if (check == (start % 3)) {
-                printf("Aww ");
+                printf("Aww");
             }
-
-            if (check == (start % 5)) {
-                printf("Geez ");
+            else if (check == (start % 5)) {
+                printf("Geez");
             }
-
-            if (check == (start % 15)) {
-                printf("Man ");
+             else if (check == (start % 15)) {
+                printf("Aww Geez Man");
             }
             start++;
                 printf("\n");
@@ -43,17 +41,15 @@ namespace c137 {
         check = 0;
             while (start <= stop) {
                 printf("%d: ", start);
-                if (check == (start % 3)) {
-                    printf("Aww ");
-                }
-
-                if (check == (start % 5)) {
-                    printf("Geez ");
-                }
-
-                if (check == (start % 15)) {
-                    printf("Man ");
-                }
+            if (check == (start % 3)) {
+                printf("Aww");
+            }
+            else if (check == (start % 5)) {
+                printf("Geez");
+            }
+             else if (check == (start % 15)) {
+                printf("Aww Geez Man");
+            }
                 start = start + step;
                     printf("\n");
             } //while bracket
@@ -68,14 +64,12 @@ namespace c137 {
         while (start <= stop) {
             printf("%d: ", start);
                 if (check == (start % 15)) {
-                    printf("naM ");
+                    printf("naM zeeG wwA");
                 }
-                
-                if (check == (start % 5)) {
-                    printf("zeeG ");
+                else if (check == (start % 5)) {
+                    printf("zeeG");
                 }
-
-                if (check == (start % 3)) {
+                else if (check == (start % 3)) {
                     printf("wwA");
                 }
             start++;
@@ -89,14 +83,12 @@ namespace c137 {
                  printf("%d: ", start);
              
                 if (check == (start % 15)) {
-                    printf("naM ");
+                    printf("naM zeeG wwA");
                 }
-                
-                if (check == (start % 5)) {
-                    printf("zeeG ");
+                else if (check == (start % 5)) {
+                    printf("zeeG");
                 }
-
-                if (check == (start % 3)) {
+                else if (check == (start % 3)) {
                     printf("wwA");
                 }
                 start = start + step;
